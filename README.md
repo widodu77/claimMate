@@ -2,28 +2,23 @@
 
 **AI-Powered Claims Management Assistant**
 
-ClaimMate automates and streamlines the entire lifecycle of claims management, from document upload to payment tracking. Built for small businesses and professionals who need efficient, AI-driven claims processing.
+ClaimMate is a modern landing page for an AI-powered claims management platform that automates and streamlines the entire lifecycle of claims processing. Built for small businesses and professionals who need efficient, AI-driven claims management.
 
-## 🚀 Features
+## 🚀 Current Features
 
-### Smart Intake
-- Upload documents, emails, or photos via drag-and-drop or email forwarding
-- Support for multiple file formats (PDF, images, emails)
+### Landing Page
+- **Modern Design**: Clean, professional landing page with dark/light mode support
+- **Responsive Layout**: Optimized for all devices and screen sizes
+- **Interactive Components**: Smooth animations and hover effects
+- **Professional Branding**: Consistent ClaimMate branding throughout
 
-### AI Document Parsing
-- OCR and NLP technology to extract structured information
-- Automatic extraction of claim numbers, amounts, policy IDs
-- Intelligent document classification and data extraction
-
-### Auto Forms
-- Pre-filled forms for insurers and platforms
-- Support for PDFs, JSON, XML formats
-- Customizable templates for different claim types
-
-### Smart Tracking
-- Automated follow-ups and status tracking
-- Appeal assistance with AI-powered suggestions
-- Real-time notifications and progress updates
+### Sections
+- **Hero Section**: Clear value proposition and call-to-action buttons
+- **Problem Statement**: Highlights pain points in claims management
+- **Solution Overview**: Showcases AI-powered features
+- **Target Users**: Specific audience segments
+- **Pricing Tiers**: Transparent pricing structure
+- **Contact & Footer**: Professional contact information
 
 ## 🎯 Target Users
 
@@ -31,7 +26,7 @@ ClaimMate automates and streamlines the entire lifecycle of claims management, f
 - **E-commerce Merchants**: Shopify, Amazon, and Etsy sellers handling returns, damage claims, and shipping insurance
 - **Freelancers & SMBs**: Professional liability, travel, equipment, and health-related claims
 
-## 💰 Pricing
+## 💰 Pricing Structure
 
 | Plan | Price | Features |
 |------|-------|----------|
@@ -43,12 +38,13 @@ ClaimMate automates and streamlines the entire lifecycle of claims management, f
 ## 🛠️ Tech Stack
 
 - **Frontend**: Next.js 13+ with App Router
-- **UI Components**: shadcn/ui with Tailwind CSS
+- **Styling**: Tailwind CSS with custom design system
+- **UI Components**: shadcn/ui components
 - **Icons**: Phosphor Icons
-- **Theme**: Dark/Light mode support
+- **Theme**: Dark/Light mode support with next-themes
 - **Deployment**: Vercel-ready
 
-## 📦 Installation
+## 📦 Installation & Setup
 
 1. **Clone the repository**
    ```bash
@@ -65,14 +61,14 @@ ClaimMate automates and streamlines the entire lifecycle of claims management, f
    pnpm install
    ```
 
-3. **Set up environment variables**
+3. **Set up environment variables** (optional for landing page)
    ```bash
    cp .env.example .env
    ```
    
-   Add your environment variables:
+   For future features, you may need:
    ```env
-   # OpenAI API Key (required for AI features)
+   # OpenAI API Key (for future AI features)
    OPENAI_API_KEY=your-openai-api-key
 
    # Supabase (for future database features)
@@ -101,11 +97,15 @@ ClaimMate automates and streamlines the entire lifecycle of claims management, f
 ```
 claimMate/
 ├── app/                    # Next.js App Router
-│   ├── page.tsx           # Landing page
-│   ├── layout.tsx         # Root layout
-│   └── globals.css        # Global styles
+│   ├── page.tsx           # Landing page (main content)
+│   ├── layout.tsx         # Root layout with metadata
+│   └── globals.css        # Global styles and CSS variables
 ├── components/            # React components
 │   ├── ui/               # shadcn/ui components
+│   │   ├── button.tsx    # Button component
+│   │   ├── card.tsx      # Card components
+│   │   ├── badge.tsx     # Badge component
+│   │   └── icons.tsx     # Icon components
 │   ├── header.tsx        # Navigation header
 │   └── ...               # Other components
 ├── lib/                  # Utility functions
@@ -115,37 +115,57 @@ claimMate/
 
 ## 🎨 Customization
 
-### Styling
-The project uses Tailwind CSS for styling. You can customize the design by modifying:
-- `app/globals.css` - Global styles and CSS variables
-- `tailwind.config.js` - Tailwind configuration
-- Component-specific styles in individual files
+### Content Updates
+The main landing page content is in `app/page.tsx`. You can easily modify:
+- Hero section messaging and CTAs
+- Problem statements and solutions
+- Target user descriptions
+- Pricing tiers and features
+- Contact information
 
-### Content
-Update the landing page content in `app/page.tsx`:
-- Hero section messaging
-- Feature descriptions
-- Pricing tiers
-- Target user profiles
+### Styling
+- **Global Styles**: Modify `app/globals.css` for theme colors and variables
+- **Tailwind Config**: Update `tailwind.config.js` for custom design tokens
+- **Component Styles**: Edit individual component files for specific styling
 
 ### Branding
-- Update the logo and branding in `components/header.tsx`
-- Modify colors in the Tailwind config
-- Update metadata in `app/layout.tsx`
+- **Logo**: Update in `components/header.tsx`
+- **Colors**: Modify CSS variables in `globals.css`
+- **Metadata**: Update title and description in `app/layout.tsx`
 
 ## 🚀 Deployment
 
 ### Vercel (Recommended)
 1. Push your code to GitHub
 2. Connect your repository to Vercel
-3. Deploy automatically
+3. Deploy automatically with zero configuration
 
 ### Other Platforms
 The project is compatible with any platform that supports Next.js:
-- Netlify
-- Railway
-- DigitalOcean App Platform
-- AWS Amplify
+- **Netlify**: Drag and drop deployment
+- **Railway**: Simple deployment with Git integration
+- **DigitalOcean App Platform**: Managed Next.js hosting
+- **AWS Amplify**: AWS-managed hosting
+
+## 🔮 Future Roadmap
+
+### Phase 1: Core Features
+- [ ] User authentication and dashboard
+- [ ] Document upload and management
+- [ ] Basic AI document parsing
+- [ ] Form generation and submission
+
+### Phase 2: Advanced Features
+- [ ] Automated follow-ups and tracking
+- [ ] Integration with insurance platforms
+- [ ] Advanced AI analytics
+- [ ] Mobile app development
+
+### Phase 3: Enterprise Features
+- [ ] White-label solutions
+- [ ] API for third-party integrations
+- [ ] Advanced reporting and analytics
+- [ ] Multi-tenant architecture
 
 ## 🤝 Contributing
 
@@ -171,7 +191,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - UI components from [shadcn/ui](https://ui.shadcn.com/)
 - Icons from [Phosphor Icons](https://phosphoricons.com/)
 - Styling with [Tailwind CSS](https://tailwindcss.com/)
+- Theme support with [next-themes](https://github.com/pacocoursey/next-themes)
 
 ---
 
 **ClaimMate** - Making claims management effortless with AI 🤖
+
+*Currently in development - Landing page ready for deployment*
