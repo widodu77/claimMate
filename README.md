@@ -114,10 +114,10 @@ ClaimMate transforms the complex, time-consuming process of managing insurance c
    ```
 
 3. **Set up environment variables**
-   ```bash
-   cp .env.example .env
-   ```
-   
+```bash
+cp .env.example .env
+```
+
    Configure your environment variables:
    ```env
    # OpenAI API Key (for AI features)
@@ -133,13 +133,13 @@ ClaimMate transforms the complex, time-consuming process of managing insurance c
    ```
 
 4. **Run the development server**
-   ```bash
+```bash
    npm run dev
    # or
    yarn dev
    # or
-   pnpm dev
-   ```
+pnpm dev
+```
 
 5. **Open your browser**
    Navigate to [http://localhost:3000](http://localhost:3000)

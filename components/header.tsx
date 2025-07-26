@@ -36,6 +36,12 @@ export async function Header() {
             >
               About
             </Link>
+            <Link
+              href="/claims"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground"
+            >
+              My Claims
+            </Link>
           </nav>
         </div>
       </div>

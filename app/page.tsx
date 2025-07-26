@@ -39,9 +39,15 @@ export default function LandingPage() {
               lifting.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
-                Start Free Trial
-                <IconArrowRight className="ml-2 h-4 w-4" />
+              <Button
+                size="lg"
+                className="bg-blue-600 hover:bg-blue-700"
+                asChild
+              >
+                <a href="/claim/new">
+                  Start Free Trial
+                  <IconArrowRight className="ml-2 h-4 w-4" />
+                </a>
               </Button>
               <Button variant="outline" size="lg">
                 Watch Demo
@@ -295,8 +301,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
-
 
       {/* CTA Section */}
       <section className="px-4 py-20 sm:px-6 lg:px-8">
